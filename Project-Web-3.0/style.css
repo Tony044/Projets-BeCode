@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'inter', sans-serif;
+    margin-left: 0;
+    padding-left: 0;  
+    
+}
+
+header > picture {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 28px 16px 20px;
+}
+
+header > picture > .logo {
+    width: 45px; 
+    height: 28px; 
+    
+}
+
+header > picture > .bar-nav {
+    width: 40px;
+    height: 17px;
+}
+
+.container {
+    margin-left: 16px;
+    margin-right: 16px;
+    display: grid;
+    & > .img-background > img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+    }
+    & > h1 {
+        grid-row: 2/3; 
+        flex-direction: column;
+        font-family: 'inter', sans-serif;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    & > p {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 26px;
+    }
+    & > button {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        color: white;
+        background-color: #F15D51;
+        width: 180px;
+        height: 48px;
+        border: 0ch;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 4.38px;
+        margin-top: 20px;
+    }
+}
+
+.sidebar {
+    background-color: #00001A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 16px;   
+    margin-right: 16px;
+    & > h2 {
+        color: #E9AA52;
+        font-family: Inter;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: left;
+        width: 70px;
+        height: 32px;
+        
+    }
+    & h3 {
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 24px;
+        text-align: left;
+        color: #FFFDFA;
+        width: 262px;
+        height: 24px;
+    }
+    & p {
+        width: 302px;
+        height: 52px;
+        font-family: Inter;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        color: #C5C6CE;
+    }
+    & > .sidebar-first {
+        border-bottom: 1px solid #5E607A;
+    }
+    & > .sidebar-second {
+        border-bottom: 1px solid #5E607A;
+    }
+}
+
+@ use components/nav.scss

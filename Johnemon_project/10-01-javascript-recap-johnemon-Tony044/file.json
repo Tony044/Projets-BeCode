@@ -1,0 +1,24 @@
+{
+  "saved_on": "2024-09-30T13:38:59.945Z",
+  "JohnemonMaster": {
+    "name": "antoine",
+    "JohnemonCollection": [
+      {
+        "name": "LyMo",
+        "level": 1,
+        "experienceMeter": 0,
+        "attackRange": 8,
+        "defenseRange": 3,
+        "healthPool": 13,
+        "catchPhrase": "Let the battle begin!"
+      }
+    ],
+    "healingItems": 5,
+    "reviveItems": 3,
+    "JOHNEBALLS": 10
+  },
+  "day": 1,
+  "logs": [
+    []
+  ]
+}

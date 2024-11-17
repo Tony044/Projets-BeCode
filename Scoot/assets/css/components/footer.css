@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Space Mono", monospace;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #495567;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
+footer .footer_top {
+  padding: 5rem 0;
+  background-color: #495567;
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 100px) {
+  footer .footer_top {
+    background-image: url("../image/footer.png");
+  }
+}
+@media only screen and (min-width: 600px) {
+  footer .footer_top {
+    background-image: url("../image/footer-large.png");
+  }
+}
+footer .footer_top h2 {
+  padding: 0 15%;
+}
+footer .footer_top .footer_circle {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+footer .footer_down {
+  padding: 6rem 0;
+  background-color: #333a44;
+}
+@media only screen and (min-width: 600px) {
+  footer .footer_down {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+  }
+}
+footer .footer_down .footer_link {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 4rem 0;
+}
+@media only screen and (min-width: 600px) {
+  footer .footer_down .footer_link {
+    flex-direction: row;
+  }
+}
+footer .footer_down .footer_link li a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #939CAA;
+}
+footer .footer_down .footer_social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+footer .footer_down .footer_social .svg_social {
+  width: 2rem;
+}
+footer_app {
+  padding: 12rem 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,74 @@
+@use 'navbar' as *;
+@use 'variable' as *;
+@use 'reset' as *;
+
+header {
+    .image-background-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #2F3B59;
+        background-image: url(../../images/image.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 160px;
+        width: 100vw;
+        box-shadow: inset 100vw 100vw rgba(47, 59, 89, 0.50);
+        overflow: hidden;
+
+        @include respond($breakpoint-tablet) {
+            justify-content: space-between;
+            padding-left: 60px;
+            height: 200px;
+            width: 100vw;
+        }
+
+        @include respond($breakpoint-desktop) {
+            justify-content: space-between;
+            padding-left: 60px;
+            height: 200px;
+            width: 100vw;
+        }
+    }
+
+    h1 { 
+        
+        @include respond($breakpoint-mobile) {
+            font-size: 40px;
+            color: #fff;
+            }
+        }
+        
+        
+    .circles {
+        display: none;
+        @include respond($breakpoint-tablet) {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-right: -1.8rem;
+        }
+
+        @include respond($breakpoint-desktop) {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-right: -2.5vw;
+        }
+        
+        span {
+            display: block;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            margin: 0px 10px;
+        }
+        .span-first, .span-second {
+            border: 2px solid #fff;
+        }
+        .span-third {
+            background-color: #fff;
+        }
+    }
+}

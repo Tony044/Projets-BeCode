@@ -1,0 +1,83 @@
+@use "variable" as *;
+
+footer {
+  color: white;
+
+  text-align: center;
+
+  .footer_top {
+    padding: 5rem 0;
+    background-color: $dark-navy;
+    @include respond($breakpoint-mobile) {
+      background-image: url("../image/footer.png");
+    }
+    @include respond($breakpoint-tablet) {
+      background-image: url("../image/footer-large.png");
+    }
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    h2 {
+      padding: 0 15%;
+    }
+
+    .footer_circle {
+      padding-top: 5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+
+  .footer_down {
+    padding: 6rem 0;
+    background-color: #333a44;
+
+    @include respond($breakpoint-tablet) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0;
+    }
+
+    .footer_link {
+      display: flex;
+      flex-direction: column;
+      @include respond($breakpoint-tablet) {
+        flex-direction: row;
+      }
+      gap: 1.5rem;
+
+      margin: 4rem 0;
+
+      li a {
+        list-style: none;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: $dim-grey;
+      }
+    }
+
+    .footer_social {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+
+      .svg_social {
+        width: 2rem;
+      }
+    }
+  }
+
+  &_app {
+    padding: 12rem 5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+}
